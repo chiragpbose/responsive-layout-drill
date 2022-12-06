@@ -1,0 +1,57 @@
+.container {
+	display: flex;
+}
+
+.content-a {
+	background-color: red;
+	height: 40vh;
+	width: 80vw;
+}
+
+.content-b {
+	background-color: orange;
+	height: 40vh;
+	width: 80vw;
+}
+.content-c {
+	height: 80vh;
+	width: 20vw;
+	background-color: yellow;
+}
+.header,
+footer {
+	height: 8vh;
+	background-color: rgb(216, 216, 216);
+}
+.header {
+	margin-top: 0vh;
+	padding-top: 0vh;
+	margin-bottom: 1vh;
+}
+footer {
+	margin-top: 1vh;
+}
+body {
+	margin: 0vh;
+}
+@media ((max-width: 800px) and (min-width:400px)) {
+	.content-a,
+	.content-b {
+		width: 50vw;
+	}
+	.content-c {
+		width: 50vw;
+	}
+}
+@media (max-width: 500px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	.content-c,
+	.content-a,
+	.content-b {
+		height: 26.66vh;
+		width: 100vw;
+	}
+}

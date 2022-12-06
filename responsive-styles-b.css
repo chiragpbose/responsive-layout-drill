@@ -1,0 +1,66 @@
+body {
+	margin: 0vh;
+}
+header,
+footer {
+	background-color: #bebebe;
+	height: 8vh;
+}
+header {
+	margin-top: 0vh;
+	margin-bottom: 2vh;
+}
+footer {
+	margin-top: 2vh;
+	margin-bottom: 0vh;
+}
+
+.container {
+	height: 80vh;
+	display: flex;
+	flex-direction: row;
+	height: 80vh;
+}
+.a {
+	background-color: yellowgreen;
+	width: 50vw;
+}
+.b {
+	background-color: green;
+	width: 25vw;
+	order: -1;
+}
+.c {
+	background-color: yellow;
+	width: 25vw;
+}
+
+@media ((max-width: 800px) and (min-width: 400px)) {
+	.container {
+		flex-wrap: wrap;
+	}
+
+	.a {
+		width: 100vw;
+		order: -2;
+	}
+	.b,
+	.c {
+		width: 50vw;
+	}
+}
+@media (max-width: 399px) {
+	.container {
+		flex-wrap: wrap;
+	}
+	.a {
+		width: 100vw;
+		height: 40vh;
+		order: -2;
+	}
+	.b,
+	.c {
+		width: 100vw;
+		height: 20vh;
+	}
+}
